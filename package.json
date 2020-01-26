@@ -1,8 +1,8 @@
 {
-  "name": "react-user-manegement",
+  "name": "react-user-management",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://guptaaditya.github.io/react-user-manegement",
+  "homepage": "https://guptaaditya.github.io/react-user-management",
   "dependencies": {
     "@babel/core": "7.7.4",
     "@svgr/webpack": "4.3.3",
