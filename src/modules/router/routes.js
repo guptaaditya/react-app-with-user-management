@@ -1,17 +1,18 @@
 import React from "react";
 import {
+  HashRouter,
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
 } from "react-router-dom";
 
-import { Login, Signup, ForgotPassword, Verification, RedirectTo, Dashboard, ResetPassword } from 'modules';
+import { Login, Signup, ForgotPassword, Verification, RedirectTo, Dashboard, ResetPassword, NotFound } from 'modules';
 import PrivateRoute from './index';
 
 export default function Routes() {
   return (
-    <Router basename="/react-app-with-user-management">
+    <HashRouter>
         <Switch>
           <Route exact path="/">
             <Redirect to="/dashboard" />
@@ -34,8 +35,11 @@ export default function Routes() {
           <PrivateRoute exact path='/dashboard'>
               <Dashboard />
           </PrivateRoute>
+          <Route path="*">
+            <NotFound />
+          </Route>
         </Switch>
         <RedirectTo />
-    </Router>
+    </HashRouter>
   );
 }
