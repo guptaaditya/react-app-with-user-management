@@ -11,7 +11,7 @@ import PrivateRoute from './index';
 
 export default function Routes() {
   return (
-    <Router>
+    <Router basename="/react-app-with-user-management">
         <Switch>
           <Route exact path="/">
             <Redirect to="/dashboard" />
