@@ -2,7 +2,7 @@
   "name": "react-user-manegement",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://guptaaditya.github.io/my-app",
+  "homepage": "https://guptaaditya.github.io/react-user-manegement",
   "dependencies": {
     "@babel/core": "7.7.4",
     "@svgr/webpack": "4.3.3",
@@ -32,6 +32,7 @@
     "eslint-plugin-react-hooks": "^1.6.1",
     "file-loader": "4.3.0",
     "fs-extra": "^8.1.0",
+    "gh-pages": "^2.2.0",
     "highcharts": "^8.0.0",
     "highcharts-react-official": "^2.2.2",
     "html-webpack-plugin": "4.0.0-beta.5",
@@ -75,6 +76,8 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
