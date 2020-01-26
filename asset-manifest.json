@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/react-user-manegement/static/css/main.6f4c955d.chunk.css",
-    "main.js": "/react-user-manegement/static/js/main.1e60f4a9.chunk.js",
-    "main.js.map": "/react-user-manegement/static/js/main.1e60f4a9.chunk.js.map",
-    "runtime-main.js": "/react-user-manegement/static/js/runtime-main.31687240.js",
-    "runtime-main.js.map": "/react-user-manegement/static/js/runtime-main.31687240.js.map",
-    "static/css/2.79e62e79.chunk.css": "/react-user-manegement/static/css/2.79e62e79.chunk.css",
-    "static/js/2.07d275ef.chunk.js": "/react-user-manegement/static/js/2.07d275ef.chunk.js",
-    "static/js/2.07d275ef.chunk.js.map": "/react-user-manegement/static/js/2.07d275ef.chunk.js.map",
-    "index.html": "/react-user-manegement/index.html",
-    "precache-manifest.98d3e8fe1e3ed152dc033319a4e0f90a.js": "/react-user-manegement/precache-manifest.98d3e8fe1e3ed152dc033319a4e0f90a.js",
-    "service-worker.js": "/react-user-manegement/service-worker.js",
-    "static/css/2.79e62e79.chunk.css.map": "/react-user-manegement/static/css/2.79e62e79.chunk.css.map",
-    "static/css/main.6f4c955d.chunk.css.map": "/react-user-manegement/static/css/main.6f4c955d.chunk.css.map",
-    "static/js/2.07d275ef.chunk.js.LICENSE": "/react-user-manegement/static/js/2.07d275ef.chunk.js.LICENSE",
-    "static/media/index.scss": "/react-user-manegement/static/media/outline-icons.ef60a4f6.woff"
+    "main.css": "/react-user-management/static/css/main.6f4c955d.chunk.css",
+    "main.js": "/react-user-management/static/js/main.9b7d846a.chunk.js",
+    "main.js.map": "/react-user-management/static/js/main.9b7d846a.chunk.js.map",
+    "runtime-main.js": "/react-user-management/static/js/runtime-main.d2cc901e.js",
+    "runtime-main.js.map": "/react-user-management/static/js/runtime-main.d2cc901e.js.map",
+    "static/css/2.de12316c.chunk.css": "/react-user-management/static/css/2.de12316c.chunk.css",
+    "static/js/2.706d8962.chunk.js": "/react-user-management/static/js/2.706d8962.chunk.js",
+    "static/js/2.706d8962.chunk.js.map": "/react-user-management/static/js/2.706d8962.chunk.js.map",
+    "index.html": "/react-user-management/index.html",
+    "precache-manifest.ef3c3e253c12c089cfd065d552afaf76.js": "/react-user-management/precache-manifest.ef3c3e253c12c089cfd065d552afaf76.js",
+    "service-worker.js": "/react-user-management/service-worker.js",
+    "static/css/2.de12316c.chunk.css.map": "/react-user-management/static/css/2.de12316c.chunk.css.map",
+    "static/css/main.6f4c955d.chunk.css.map": "/react-user-management/static/css/main.6f4c955d.chunk.css.map",
+    "static/js/2.706d8962.chunk.js.LICENSE": "/react-user-management/static/js/2.706d8962.chunk.js.LICENSE",
+    "static/media/index.scss": "/react-user-management/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.31687240.js",
-    "static/css/2.79e62e79.chunk.css",
-    "static/js/2.07d275ef.chunk.js",
+    "static/js/runtime-main.d2cc901e.js",
+    "static/css/2.de12316c.chunk.css",
+    "static/js/2.706d8962.chunk.js",
     "static/css/main.6f4c955d.chunk.css",
-    "static/js/main.1e60f4a9.chunk.js"
+    "static/js/main.9b7d846a.chunk.js"
   ]
 }
