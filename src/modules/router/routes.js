@@ -1,18 +1,21 @@
 import React from "react";
 import {
-  HashRouter,
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Redirect,
 } from "react-router-dom";
 
-import { Login, Signup, ForgotPassword, Verification, RedirectTo, Dashboard, ResetPassword, NotFound } from 'modules';
+import { 
+  Login, Signup, ForgotPassword, Verification, RedirectTo, Dashboard, ResetPassword ,
+  Links
+} from 'modules';
+import Sidebar from 'components/sidebar';
 import PrivateRoute from './index';
 
 export default function Routes() {
   return (
-    <HashRouter>
+    <Router basename='/advertise-overlays'>
         <Switch>
           <Route exact path="/">
             <Redirect to="/dashboard" />
@@ -35,11 +38,20 @@ export default function Routes() {
           <PrivateRoute exact path='/dashboard'>
               <Dashboard />
           </PrivateRoute>
-          <Route path="*">
-            <NotFound />
-          </Route>
+          <PrivateRoute exact path='/links'>
+              <Links />
+          </PrivateRoute>
+          <PrivateRoute exact path='/overlays'>
+              <Dashboard />
+          </PrivateRoute>
+          <PrivateRoute exact path='/user-profile'>
+              <Links />
+          </PrivateRoute>
+          <PrivateRoute exact path='/logout'>
+              <Links />
+          </PrivateRoute>
         </Switch>
         <RedirectTo />
-    </HashRouter>
+    </Router>
   );
 }
