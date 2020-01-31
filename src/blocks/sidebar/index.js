@@ -33,10 +33,10 @@ function MenuItems(props) {
       {_.map(
         menuItems,
         (item, index) => {
-          const { as = "a", icon = "", label = "", onClick = _.noop } = item;
+          const { as = "a", icon = "", label = "", onClick = _.noop, active = false } = item;
           if (icon || label) {
             return (
-              <Menu.Item as={as} key={index} onClick={e => {onClick(); onItemClickToParents(item)}} >
+              <Menu.Item as={as} key={index} active={active} onClick={e => {onClick(); onItemClickToParents(item)}} >
                 {icon && <Icon name={icon} />}
                 <span>{label}</span>
               </Menu.Item>

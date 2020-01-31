@@ -1,4 +1,7 @@
 import React from 'react';
+import _ from 'lodash';
+
+import { withRouter } from 'react-router-dom';
 
 import Sidebar from 'components/sidebar';
 import AppBody from 'blocks/appbody';
@@ -6,7 +9,7 @@ import AppBody from 'blocks/appbody';
 
 const logo = { src: "https://react.semantic-ui.com/logo.png" };
 
-export default class MainApp extends React.Component {
+export class MainApp extends React.Component {
     handleMenuClick = item => {
         if (item.route) {
             const { onRedirect } =  this.props;
@@ -15,6 +18,8 @@ export default class MainApp extends React.Component {
     }
 
     render() {
+        const { match, location, history } = this.props;
+        debugger;
         const menuItems = [{
               label: "Dashboard", icon: "dashboard", route: "/dashboard",
             }, {
@@ -26,6 +31,11 @@ export default class MainApp extends React.Component {
             }, {
               bottom: true, label: "Signout", icon: "power off", route: "/logout",
         }];
+
+        const loadedRouteComponent = _.find(menuItems, { route: match.path });
+        if (loadedRouteComponent) {
+          loadedRouteComponent.active = true;
+        }
           
         return (
             <>
@@ -38,3 +48,5 @@ export default class MainApp extends React.Component {
 
     }
 }
+
+export default withRouter(MainApp);
